@@ -28,10 +28,12 @@
     border-radius: 15px;
     background: unset;
     border: white 2px solid;
+    color: white;
 }
 .button:hover{
     background: aliceblue;
     text-transform: uppercase;
+    color: black;
 }
 .input{
     width: 100%;

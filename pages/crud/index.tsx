@@ -68,6 +68,7 @@ function Crud({ initialContact }:{initialContact:any}) {
         var formData = new FormData(e.target);
 
         const form_values = Object.fromEntries(formData);
+        
         const value = {
             name:form_values.name,
             email:form_values.email,
@@ -153,6 +154,10 @@ function Crud({ initialContact }:{initialContact:any}) {
                                 <option defaultValue={"opt1"}>Male</option>
                                 <option defaultValue={"opt2"}>Female</option>
                             </select>
+
+                            {/* <label htmlFor="exampleInputImage1" className="form-label">Image</label>
+                            <input name="image" type="file" className="form-control" id="image" accept="image/*" /> */}
+                  
                             <br />
                             <div style={{ "display": "flex", "justifyContent": "center" }}>
                                 <button className={styles.button} type='submit'>Submit</button>
@@ -173,7 +178,7 @@ function Crud({ initialContact }:{initialContact:any}) {
                                 <div key={id} className={styles.right_main1}>
                                     
                                     <div className={styles.image_container}>
-                                        <Image alt='user_image' width={100} height={100} layout='responsive' src={'/testimonials-5.jpg'} />
+                                        <Image alt='user_image' width={100} height={100} layout='responsive' src={contact.image} />
                                     </div>
                                     <div className={styles.text_box}>
                                         <div style={{ "display": "flex", "justifyContent": "space-between" }}>
