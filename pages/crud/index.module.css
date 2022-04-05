@@ -84,6 +84,16 @@
 .hidden{
     display: none;
 }
+.image{
+    width: 3em;
+    height: 3em;
+    
+    border-radius: 50%;
+    object-fit: contain;
+    overflow: hidden;
+    
+    
+}
 
 @media only screen and (max-width: 900px){
     .main_1{

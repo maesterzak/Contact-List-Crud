@@ -26,7 +26,7 @@ export default async function handler(
         email:contactData.email,
         address: contactData.address,
         gender: contactData.gender,
-        image: contactData.image,
+        image: contactData.chat_image,
     }
   })
   const contacts = await prisma.contact.findMany();
